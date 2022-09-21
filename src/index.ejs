@@ -1,0 +1,65 @@
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIS</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        /* 隐藏Cesium LOGO */
+        .cesium-widget-credits{
+            display:none !important;
+        }
+
+        #tool-container {
+    margin: 0;
+    padding: 3px;
+    position: absolute;
+    height: 38px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.toolbar-button {
+    border-radius: 5px;
+    height: 32px;
+    width: 32px;
+    margin: 3px;
+    background: #303336;
+    border: 1px solid #303336;
+    background-size: cover;
+    z-index: 6;
+    cursor: pointer;
+    float: left;
+}
+
+.toolbar-button:hover {
+    color: #fff;
+    fill: #fff;
+    background: #48B;
+    border-color: #AEF;
+    box-shadow: 0 0 8px #FFF;
+}
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div id="cesiumContainer"></div>
+    <span id="tool-container">
+        <button id="hide3Dtiles" class="toolbar-button">3D</button>
+        <button id="hideroad" class="toolbar-button">路</button>
+        <button id="visualbility" class="toolbar-switch toolbar-button">通</button>
+    </span>
+</body>
+
+</html>
